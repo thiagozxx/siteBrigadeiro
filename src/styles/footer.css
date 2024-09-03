@@ -1,0 +1,51 @@
+/* Estilize o footer */
+footer {
+    background: url(/src/image/wave.svg);
+    height: 400px;
+    background-size: cover;
+    position: relative;
+    color: #fff; /* Cor do texto para garantir contraste com o fundo */
+}
+
+/* Estilize o container dos itens do footer */
+#footer_items {
+    display: flex;
+    justify-content: space-between;
+    padding: 20px 8%; /* Adiciona algum espaço interno ao redor do conteúdo */
+    align-items: center;
+    position: absolute;
+    bottom: 20px; /* Alinha o container à parte inferior do footer */
+    width: 100%; /* Garante que o container ocupe toda a largura do footer */
+    box-sizing: border-box; /* Inclui padding e border no cálculo da largura */
+}
+
+/* Estilize o copyright */
+#copyright {
+    color: #fff; /* Cor do texto do copyright */
+    font-weight: 500;
+}
+
+/* Estilize os botões de mídia social */
+.social-media-buttons {
+    display: flex;
+    gap: 15px; /* Espaçamento entre os ícones */
+}
+
+/* Estilize os ícones de mídia social */
+.social-media-buttons a {
+    color: #fff; /* Cor dos ícones */
+    font-size: 24px; /* Tamanho dos ícones */
+    text-decoration: none; /* Remove o sublinhado dos links */
+}
+
+/* Adiciona um efeito de hover nos ícones */
+.social-media-buttons a:hover {
+    color: #f39c12; /* Cor dos ícones ao passar o mouse */
+}
+
+@media screen and (max-width: 600px) {
+    #footer_items{
+        flex-direction: column;
+        gap: 20px;
+    }
+}
